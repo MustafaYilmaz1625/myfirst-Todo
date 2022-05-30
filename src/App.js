@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Todo Listem</h1>
+        <h1>MY TODO LİST</h1>
       </header>
       <Form
         inputText={inputText}

@@ -23,7 +23,7 @@ function Form({ inputText, setInputText, todos, setTodos }) {
           type="text"
           value={inputText}
           className="todo-input"
-          placeholder="Ekleyin..."
+          placeholder="Add..."
           onChange={inputTextHandler}
         />
         <button
