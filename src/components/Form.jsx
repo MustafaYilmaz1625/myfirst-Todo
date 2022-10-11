@@ -7,13 +7,17 @@ function Form({ inputText, setInputText, todos, setTodos }) {
 
   const submitTodoHandler = (e) => {
     e.preventDefault();
+    if(!inputText){
+      window.alert("Please enter a text!!!!")
+    }else{
+      setTodos([
+        ...todos,
+        { text: inputText, completed: false, id: Math.random() },
+      ]);
 
-    setTodos([
-      ...todos,
-      { text: inputText, completed: false, id: Math.random() },
-    ]);
-
-    setInputText("");
+      setInputText("");
+    }
+    
   };
 
   return (
