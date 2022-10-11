@@ -5,11 +5,12 @@ function TodoList({ todos, setTodos }) {
   return (
     <div className="todo-container ">
       <ul className="todo-list">
-        {todos?.map((todo) => (
+        {todos?.map((todo,index) => (
           <Todo
             text={todo.text}
             key={todo.id}
             todos={todos}
+            index={index}
             todo={todo}
             setTodos={setTodos}
           />
