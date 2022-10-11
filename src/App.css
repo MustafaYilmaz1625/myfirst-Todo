@@ -62,6 +62,7 @@ form button:hover {
   list-style: none;
 }
 
+
 .todo {
   margin: 0.5rem;
   background-color: #fff;
@@ -76,6 +77,7 @@ form button:hover {
 .todo li {
   width: 100%;
   padding: 0 0.5rem;
+  text-transform: capitalize;
 }
 
 .complete-btn,
